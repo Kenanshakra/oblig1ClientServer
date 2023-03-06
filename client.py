@@ -5,7 +5,7 @@ def main():
     message ="Hello world"
 
     # Serverens IP-adresse og port
-    serverAddr = ('127.0.0.1', 65071)
+    serverAddr = ('127.0.0.1', 12000)
 
     # Create a socket and connect to the server
     clientSocket = socket(AF_INET, SOCK_STREAM)
