@@ -1,6 +1,7 @@
 # oblig1ClientServer
 Kenan Abou Shakra, s345510
-Task2:
+
+Task1:
 Implement a Simple Web Server:
 
 1.Import the socket module and create a server socket object with AF_INET (IPv4) and SOCK_STREAM (TCP) parameters.
@@ -11,6 +12,8 @@ Implement a Simple Web Server:
 6.If the file is not found, send an HTTP 404 Not Found error message to the client.
 7.Create an HTTP response message with the requested file preceded by header lines, and send it to the client using the send() method of the connection socket object.
 8.Close the connection socket and go back to listening for incoming client connections.
+
+
 Task2:
 Implement a Web Client:
 
@@ -21,5 +24,7 @@ Implement a Web Client:
 5.Receive the HTTP response message from the server using the recv() method of the client socket object.
 6.Print the HTTP response message on the console.
 
-Task 3: Making a multi-threaded web server
-to implement a multithreaded server that is capable of serving multiple requests simultaneously. Using threading, first i created a main thread in which my modified server listens for clients at a fixed port. When it receives a TCP connection request from a client, it will set up the TCP connection through another port and services the client request in a separate thread. There will be a separate TCP connection in a separate thread for each request/response pair.
+
+Task 3:
+Making a multi-threaded web server
+To implement a multithreaded server that is capable of serving multiple requests simultaneously. Using threading, first i created a main thread in which my modified server listens for clients at a fixed port. When it receives a TCP connection request from a client, it will set up the TCP connection through another port and services the client request in a separate thread. There will be a separate TCP connection in a separate thread for each request/response pair.
